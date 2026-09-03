@@ -2,30 +2,30 @@
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
 	<ConfigVersions>
 		<Metadata name="CommonModule.ЭАрМ_НастройкиСервер" id="c6d7e8f9-9999-0000-1111-222233334444" configVersion="d50aa581aba1a951dc0cb125c32ba298a20fe3a2"/>
-		<Metadata name="CommonModule.ЭАрМ_НастройкиСервер.Module" id="c6d7e8f9-9999-0000-1111-222233334444.0" configVersion="bfc7faa12c8fa711da7e351b456596984e58d3f7"/>
+		<Metadata name="CommonModule.ЭАрМ_НастройкиСервер.Module" id="c6d7e8f9-9999-0000-1111-222233334444.0" configVersion="88cd2b54d56919c81994a2df8c03b8d971c92e7d"/>
 		<Metadata name="CommonModule.ЭАрМ_ОбменСДругойБазой" id="1c68cf8d-3bb9-4f56-83f8-d5a30ac35ac3" configVersion="78d8e36edfbf3400e28126e9b4b242cb513e57a0"/>
-		<Metadata name="CommonModule.ЭАрМ_ОбменСДругойБазой.Module" id="1c68cf8d-3bb9-4f56-83f8-d5a30ac35ac3.0" configVersion="c7c3c355d196272f8213255b10b1acae80768dcd"/>
+		<Metadata name="CommonModule.ЭАрМ_ОбменСДругойБазой.Module" id="1c68cf8d-3bb9-4f56-83f8-d5a30ac35ac3.0" configVersion="e1f20ae1d003463ee49836a963812ea76d0772bf"/>
 		<Metadata name="CommonModule.ЭАрМ_ОбработкаПодтвержденийЭДО" id="fe3747ba-8396-4942-8581-91f24bd18df8" configVersion="4319aec7f9834b736c6e5cf146724b597ba1c748"/>
-		<Metadata name="CommonModule.ЭАрМ_ОбработкаПодтвержденийЭДО.Module" id="fe3747ba-8396-4942-8581-91f24bd18df8.0" configVersion="87fd3131d867ffd83cade64cf7ee278868a35e88"/>
+		<Metadata name="CommonModule.ЭАрМ_ОбработкаПодтвержденийЭДО.Module" id="fe3747ba-8396-4942-8581-91f24bd18df8.0" configVersion="c49b010f4dff0db43aa46e5a4385fddb79264c9e"/>
 		<Metadata name="CommonModule.ЭАрМ_ОбщийМодуль" id="83c728d5-699e-4fb4-9c32-2010273ef451" configVersion="eaf6144191559cb0ff8d7700c2617074666cbbe3"/>
-		<Metadata name="CommonModule.ЭАрМ_ОбщийМодуль.Module" id="83c728d5-699e-4fb4-9c32-2010273ef451.0" configVersion="226501cdc0847977cb38a836cf35ac13affa531f"/>
+		<Metadata name="CommonModule.ЭАрМ_ОбщийМодуль.Module" id="83c728d5-699e-4fb4-9c32-2010273ef451.0" configVersion="bdf10cf29df50dcea293d298d083baf76897d2d9"/>
 		<Metadata name="CommonModule.ЭАрМ_ПанельУправленияЭДОКлиент" id="841e4de0-0af3-472f-b8aa-355cf5d11b1f" configVersion="06936505c35319a0482ac0280ef6195fd9a4af2e"/>
-		<Metadata name="CommonModule.ЭАрМ_ПанельУправленияЭДОКлиент.Module" id="841e4de0-0af3-472f-b8aa-355cf5d11b1f.0" configVersion="92476b571de7d8ada3b9de970403aac072e6c154"/>
+		<Metadata name="CommonModule.ЭАрМ_ПанельУправленияЭДОКлиент.Module" id="841e4de0-0af3-472f-b8aa-355cf5d11b1f.0" configVersion="bb497dd5adb1da4f01422ba840170aed4aef3b3e"/>
 		<Metadata name="CommonModule.ЭАрМ_ПанельУправленияЭДОСервер" id="2a1033c5-600c-4c35-afb4-d698d8b49888" configVersion="ffdf3cf6565dde15450c145514036b3b5e4e0eda"/>
-		<Metadata name="CommonModule.ЭАрМ_ПанельУправленияЭДОСервер.Module" id="2a1033c5-600c-4c35-afb4-d698d8b49888.0" configVersion="6137403d1576eeb39c238276406faefffc975955"/>
+		<Metadata name="CommonModule.ЭАрМ_ПанельУправленияЭДОСервер.Module" id="2a1033c5-600c-4c35-afb4-d698d8b49888.0" configVersion="e0ef987beccca3eed91cfb987a277842ce4cf60a"/>
 		<Metadata name="CommonModule.ЭАрМ_ПриемДокументовДалион" id="b2c3d4e5-f6a7-8901-bcde-f12345678901" configVersion="e45e3148179a241f1747e278cffc7cab546d450e"/>
-		<Metadata name="CommonModule.ЭАрМ_ПриемДокументовДалион.Module" id="b2c3d4e5-f6a7-8901-bcde-f12345678901.0" configVersion="31326781f076fe207655662b5ed99edc713c26d5"/>
-		<Metadata name="Configuration.АРМ_ЭдоОбмен" id="5c4537db-f099-4446-9068-f8560e4188c3" configVersion="c849a4212f2454a866269c02da814b17f86ab678"/>
-		<Metadata name="Configuration.АРМ_ЭдоОбмен.ExternalConnectionModule" id="f4a62ad0-1ff2-4f44-80fc-628140182405.5" configVersion="1410a62813663e1b30c83b69475bc807c318d427"/>
-		<Metadata name="Configuration.АРМ_ЭдоОбмен.ManagedApplicationModule" id="f4a62ad0-1ff2-4f44-80fc-628140182405.6" configVersion="236ed89dd8dc9cd27a0228a6a43e01baf262994c"/>
-		<Metadata name="Configuration.АРМ_ЭдоОбмен.SessionModule" id="f4a62ad0-1ff2-4f44-80fc-628140182405.7" configVersion="3602fddde90547eb98de79db219e4a7f5d89a4b3"/>
+		<Metadata name="CommonModule.ЭАрМ_ПриемДокументовДалион.Module" id="b2c3d4e5-f6a7-8901-bcde-f12345678901.0" configVersion="44b692e149ee24e8e92fb36eea2befd9d8cf9742"/>
+		<Metadata name="Configuration.АРМ_ЭдоОбмен" id="5c4537db-f099-4446-9068-f8560e4188c3" configVersion="877400b9432fea15874ab490ea63f7810dfc19f6"/>
+		<Metadata name="Configuration.АРМ_ЭдоОбмен.ExternalConnectionModule" id="f4a62ad0-1ff2-4f44-80fc-628140182405.5" configVersion="5e99bd9e31a74f2f2500aad37f746f70b70b27df"/>
+		<Metadata name="Configuration.АРМ_ЭдоОбмен.ManagedApplicationModule" id="f4a62ad0-1ff2-4f44-80fc-628140182405.6" configVersion="8c332e5dd1a010d0909dbe4e1314617611a1b93c"/>
+		<Metadata name="Configuration.АРМ_ЭдоОбмен.SessionModule" id="f4a62ad0-1ff2-4f44-80fc-628140182405.7" configVersion="0422f3db51a76c0ece967aa809b5781b3f0890e3"/>
 		<Metadata name="Constant.ЭАрМ_АдресСервисаОбменаСДругойБазой" id="853583dc-0314-41bd-9018-754af52d1d29" configVersion="1bc80ce4dc2fedf9358dc75bfba50f49faaed131"/>
 		<Metadata name="DataProcessor.ЭАрМ_ПанельУправленияЭДО" id="97d86dde-ce7b-43e4-8ab3-06716c13ec90" configVersion="8bbadbeb6a9b2e97d94e691066b0405e0f35af19">
 			<Metadata name="DataProcessor.ЭАрМ_ПанельУправленияЭДО.Command.ОткрытьПанельУправленияЭДО" id="7b054bbc-e546-445f-a19d-9293fbe945f9"/>
 		</Metadata>
-		<Metadata name="DataProcessor.ЭАрМ_ПанельУправленияЭДО.Command.ОткрытьПанельУправленияЭДО.CommandModule" id="7b054bbc-e546-445f-a19d-9293fbe945f9.2" configVersion="178361ea242e7d8f859fd16e0da17fd70ffa38b5"/>
+		<Metadata name="DataProcessor.ЭАрМ_ПанельУправленияЭДО.Command.ОткрытьПанельУправленияЭДО.CommandModule" id="7b054bbc-e546-445f-a19d-9293fbe945f9.2" configVersion="d28433e08ae49478ede1e80ba6207795044fac24"/>
 		<Metadata name="DataProcessor.ЭАрМ_ПанельУправленияЭДО.Form.Форма" id="52a15aec-9c82-4ece-a9e0-2f0e20484343" configVersion="1550834f46228a5bd89543f05cc72a5c5475b808"/>
-		<Metadata name="DataProcessor.ЭАрМ_ПанельУправленияЭДО.Form.Форма.Form" id="52a15aec-9c82-4ece-a9e0-2f0e20484343.0" configVersion="b14a34b40a0653b237ba14d0672a018b0fe63802"/>
+		<Metadata name="DataProcessor.ЭАрМ_ПанельУправленияЭДО.Form.Форма.Form" id="52a15aec-9c82-4ece-a9e0-2f0e20484343.0" configVersion="4c2ef711c7650e608ef4a669bbb0497a0d4aaad1"/>
 		<Metadata name="Document.ЭлектронныйДокументВходящийЭДО" id="f1a2b3c4-d5e6-7890-abcd-ef0123456789" configVersion="74abd43bdc13693a47875859252d8bb3298c2e5c"/>
 		<Metadata name="Enum.ЭАрМ_СтатусыОжиданияПодтвержденияЭДО" id="b17af122-253c-41ad-a37a-7b2b35427133" configVersion="e1b104e59a55e749982071af799e5e06b5f7d1cd">
 			<Metadata name="Enum.ЭАрМ_СтатусыОжиданияПодтвержденияЭДО.EnumValue.Отклонено" id="27b6dca6-51f4-4357-9ab6-656cac1ff43f"/>
@@ -41,14 +41,14 @@
 			<Metadata name="HTTPService.ЭАрМ_ПодтверждениеЭДО.URLTemplate.confirm" id="077a109c-56e4-4e50-8620-288e744cdd43"/>
 			<Metadata name="HTTPService.ЭАрМ_ПодтверждениеЭДО.URLTemplate.confirm.Method.POST" id="d38ce762-9275-4210-8b76-e6c145abf21a"/>
 		</Metadata>
-		<Metadata name="HTTPService.ЭАрМ_ПодтверждениеЭДО.Module" id="5cb05499-1749-4b79-aec7-0d40657ec7f7.0" configVersion="5f2942e24e6547e428b6ff9d08c198678d5501d8"/>
+		<Metadata name="HTTPService.ЭАрМ_ПодтверждениеЭДО.Module" id="5cb05499-1749-4b79-aec7-0d40657ec7f7.0" configVersion="d1423db462239aad7aa35057366336260d0f716b"/>
 		<Metadata name="HTTPService.ЭАрМ_ПриемДокументов" id="c3d4e5f6-a7b8-9012-cdef-123456789012" configVersion="2ef529c845a63f300029cd74b9ebcdd84ee2a85e">
 			<Metadata name="HTTPService.ЭАрМ_ПриемДокументов.URLTemplate.etrnstatus.Method.GET" id="a7b8c9d0-e1f2-3456-abcd-567890123456"/>
 			<Metadata name="HTTPService.ЭАрМ_ПриемДокументов.URLTemplate.etrn" id="d4e5f6a7-b8c9-0123-defa-234567890123"/>
 			<Metadata name="HTTPService.ЭАрМ_ПриемДокументов.URLTemplate.etrn.Method.POST" id="e5f6a7b8-c9d0-1234-efab-345678901234"/>
 			<Metadata name="HTTPService.ЭАрМ_ПриемДокументов.URLTemplate.etrnstatus" id="f6a7b8c9-d0e1-2345-fabc-456789012345"/>
 		</Metadata>
-		<Metadata name="HTTPService.ЭАрМ_ПриемДокументов.Module" id="c3d4e5f6-a7b8-9012-cdef-123456789012.0" configVersion="29a97b8bbe58311812033ce3629973753b80c8a2"/>
+		<Metadata name="HTTPService.ЭАрМ_ПриемДокументов.Module" id="c3d4e5f6-a7b8-9012-cdef-123456789012.0" configVersion="95450979a6f50deda1d31b67c836ee6d0d621f12"/>
 		<Metadata name="InformationRegister.СостоянияПоОбъектамУчетаЭДО" id="2ab164ae-1f1d-4eff-885b-22d56038229a" configVersion="6b0ee9c6972136b139f65431e8c6f3bf01d424c6"/>
 		<Metadata name="InformationRegister.ЭАрМ_НастройкиЭДО" id="a1b2c3d4-1111-2222-3333-444455556666" configVersion="b2e1d421f8cdcb19bb1f34912ac7c4de41c40925">
 			<Metadata name="InformationRegister.ЭАрМ_НастройкиЭДО.Dimension.КлючНастройки" id="d6e7f8a9-6666-7777-8888-999900001111"/>
