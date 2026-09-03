@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастройки" id="1">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="АдресСервисаДалионПоле" id="3">
+					<DataPath>АдресСервисаДалион</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес сервиса Далион</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="АдресСервисаДалионПолеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="АдресСервисаДалионПолеРасширеннаяПодсказка" id="5"/>
+				</InputField>
+				<InputField name="ТранспортОбменаПоле" id="6">
+					<DataPath>ТранспортОбмена</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транспорт обмена</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТранспортОбменаПолеКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ТранспортОбменаПолеРасширеннаяПодсказка" id="8"/>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>HTTP</v8:content>
+								</v8:item>
+							</xr:Presentation>
+							<xr:Value>HTTP</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>FTP</v8:content>
+								</v8:item>
+							</xr:Presentation>
+							<xr:Value>FTP</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Папка</v8:content>
+								</v8:item>
+							</xr:Presentation>
+							<xr:Value>Папка</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<Events>
+						<Event name="OnChange">ТранспортОбменаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ИспользоватьАвтоОтправкуПоле" id="9">
+					<DataPath>ИспользоватьАвтоОтправку</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автоотправка</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьАвтоОтправкуПолеКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ИспользоватьАвтоОтправкуПолеРасширеннаяПодсказка" id="11"/>
+				</CheckBoxField>
+				<CheckBoxField name="ЛогироватьСобытияПоле" id="12">
+					<DataPath>ЛогироватьСобытия</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Логировать события</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЛогироватьСобытияПолеКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ЛогироватьСобытияПолеРасширеннаяПодсказка" id="14"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаFTP" id="15">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаFTPRасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<InputField name="FTP_СерверПоле" id="17">
+					<DataPath>FTP_Сервер</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>FTP сервер</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="FTP_СерверПолеКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="FTP_СерверПолеРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="FTP_ПортПоле" id="20">
+					<DataPath>FTP_Порт</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порт</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="FTP_ПортПолеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="FTP_ПортПолеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="FTP_ПользовательПоле" id="23">
+					<DataPath>FTP_Пользователь</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="FTP_ПользовательПолеКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="FTP_ПользовательПолеРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="FTP_ПарольПоле" id="26">
+					<DataPath>FTP_Пароль</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль</v8:content>
+						</v8:item>
+					</Title>
+					<PasswordMode>true</PasswordMode>
+					<ContextMenu name="FTP_ПарольПолеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="FTP_ПарольПолеРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="FTP_КаталогПоле" id="29">
+					<DataPath>FTP_Каталог</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Каталог</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="FTP_КаталогПолеКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="FTP_КаталогПолеРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПапка" id="34">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПапкаРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<InputField name="ПапкаОбменаПоле" id="36">
+					<DataPath>ПапкаОбмена</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к папке обмена</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПапкаОбменаПолеКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ПапкаОбменаПолеРасширеннаяПодсказка" id="38"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="СохранитьНастройкиКнопка" id="32">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<DefaultButton>true</DefaultButton>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<CommandName>Form.Command.СохранитьНастройкиКоманда</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СохранитьНастройкиКнопкаРасширеннаяПодсказка" id="33"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="АдресСервисаДалион" id="1">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТранспортОбмена" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьАвтоОтправку" id="3">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛогироватьСобытия" id="4">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="FTP_Сервер" id="5">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="FTP_Порт" id="6">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>5</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="FTP_Пользователь" id="7">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="FTP_Пароль" id="8">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="FTP_Каталог" id="9">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПапкаОбмена" id="10">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьНастройкиКоманда" id="1">
+			<Action>СохранитьНастройки</Action>
+		</Command>
+	</Commands>
+</Form>

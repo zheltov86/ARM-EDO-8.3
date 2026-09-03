@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Button name="ОткрытьРегистрЭДО" id="1">
+			<Type>Hyperlink</Type>
+			<Representation>Text</Representation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<PlacementArea>mainCmdsLeft</PlacementArea>
+			<CommandName>Form.Command.ОткрытьРегистрЭДО</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть журнал ожидания подтверждений ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<RepresentationInContextMenu>None</RepresentationInContextMenu>
+			<ExtendedTooltip name="ОткрытьРегистрЭДОРасширеннаяПодсказка" id="80"/>
+		</Button>
+		<UsualGroup name="ГруппаШапка" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель управления ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапка" id="28">
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowLeftMargin>false</ShowLeftMargin>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<CurrentRowUse>Use</CurrentRowUse>
+					<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="29"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНастройки" id="30">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowLeftMargin>false</ShowLeftMargin>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<CurrentRowUse>Use</CurrentRowUse>
+							<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="31"/>
+							<ChildItems>
+								<InputField name="АдресСервисаПоле" id="35">
+									<DataPath>АдресСервиса</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Адрес сервиса обмена</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="АдресСервисаПолеКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="АдресСервисаПолеРасширеннаяПодсказка" id="37"/>
+								</InputField>
+								<CheckBoxField name="ИспользоватьАвтоОтправкуПоле" id="38">
+									<DataPath>ИспользоватьАвтоОтправку</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Автоотправка</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьАвтоОтправкуПолеКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ИспользоватьАвтоОтправкуПолеРасширеннаяПодсказка" id="40"/>
+								</CheckBoxField>
+								<Button name="ПроверитьПодключениеКнопка" id="41">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПроверитьПодключениеКоманда</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверить подключение</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПроверитьПодключениеКнопкаРасширеннаяПодсказка" id="42"/>
+								</Button>
+								<Button name="ЗаписатьНастройкиКнопка" id="43">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗаписатьНастройкиКоманда</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохранить настройки</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗаписатьНастройкиКнопкаРасширеннаяПодсказка" id="44"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКнопки" id="10">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowLeftMargin>false</ShowLeftMargin>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<CurrentRowUse>Use</CurrentRowUse>
+					<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="81"/>
+					<ChildItems>
+						<Button name="ТестироватьМеханизм" id="11">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<DefaultButton>true</DefaultButton>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<PlacementArea>mainCmdsLeft</PlacementArea>
+							<CommandName>Form.Command.ТестироватьМеханизм</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тест УПД</v8:content>
+								</v8:item>
+							</Title>
+							<RepresentationInContextMenu>None</RepresentationInContextMenu>
+							<ExtendedTooltip name="ТестироватьМеханизмРасширеннаяПодсказка" id="82"/>
+						</Button>
+						<Button name="ТестироватьЭТрН" id="84">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<PlacementArea>mainCmdsLeft</PlacementArea>
+							<CommandName>Form.Command.ТестироватьЭТрНКоманда</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тест ЭТрН</v8:content>
+								</v8:item>
+							</Title>
+							<RepresentationInContextMenu>None</RepresentationInContextMenu>
+							<ExtendedTooltip name="ТестироватьЭТрНРасширеннаяПодсказка" id="85"/>
+						</Button>
+						<Button name="ОбновитьЖурнал" id="12">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<PlacementArea>mainCmdsLeft</PlacementArea>
+							<CommandName>Form.Command.ОбновитьЖурнал</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновить</v8:content>
+								</v8:item>
+							</Title>
+							<RepresentationInContextMenu>None</RepresentationInContextMenu>
+							<ExtendedTooltip name="ОбновитьЖурналРасширеннаяПодсказка" id="83"/>
+						</Button>
+						<CheckBoxField name="ТестовыйРежимПоле" id="32">
+							<DataPath>ТестовыйРежим</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тестовый режим</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТестовыйРежимПолеКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ТестовыйРежимПолеРасширеннаяПодсказка" id="34"/>
+							<Events>
+								<Event name="OnChange">ТестовыйРежимПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЖурнал" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал отправок</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ГруппаЖурналРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<Table name="ЖурналОтправок" id="47">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ЖурналОтправок</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ЖурналОтправокКонтекстноеМеню" id="49"/>
+					<AutoCommandBar name="ЖурналОтправокКоманднаяПанель" id="48"/>
+					<ExtendedTooltip name="ЖурналОтправокРасширеннаяПодсказка" id="50"/>
+					<SearchStringAddition name="ЖурналОтправокСтрокаПоиска" id="51">
+						<AdditionSource>
+							<Item>ЖурналОтправок</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЖурналОтправокСтрокаПоискаКонтекстноеМеню" id="52"/>
+						<ExtendedTooltip name="ЖурналОтправокСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ЖурналОтправокСостояниеПросмотра" id="57">
+						<AdditionSource>
+							<Item>ЖурналОтправок</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЖурналОтправокСостояниеПросмотраКонтекстноеМеню" id="58"/>
+						<ExtendedTooltip name="ЖурналОтправокСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ЖурналОтправокУправлениеПоиском" id="54">
+						<AdditionSource>
+							<Item>ЖурналОтправок</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ЖурналОтправокУправлениеПоискомКонтекстноеМеню" id="55"/>
+						<ExtendedTooltip name="ЖурналОтправокУправлениеПоискомРасширеннаяПодсказка" id="56"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ЖурналОтправокДокумент" id="60">
+							<DataPath>ЖурналОтправок.Документ</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЖурналОтправокДокументКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ЖурналОтправокДокументРасширеннаяПодсказка" id="62"/>
+						</InputField>
+						<InputField name="ЖурналОтправокИдентификаторЗапроса" id="63">
+							<DataPath>ЖурналОтправок.ИдентификаторЗапроса</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЖурналОтправокИдентификаторЗапросаКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ЖурналОтправокИдентификаторЗапросаРасширеннаяПодсказка" id="65"/>
+						</InputField>
+						<InputField name="ЖурналОтправокСтатус" id="66">
+							<DataPath>ЖурналОтправок.Статус</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЖурналОтправокСтатусКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ЖурналОтправокСтатусРасширеннаяПодсказка" id="68"/>
+						</InputField>
+						<InputField name="ЖурналОтправокДатаОтправки" id="69">
+							<DataPath>ЖурналОтправок.ДатаОтправки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЖурналОтправокДатаОтправкиКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ЖурналОтправокДатаОтправкиРасширеннаяПодсказка" id="71"/>
+						</InputField>
+						<InputField name="ЖурналОтправокКомментарий" id="72">
+							<DataPath>ЖурналОтправок.Комментарий</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЖурналОтправокКомментарийКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="ЖурналОтправокКомментарийРасширеннаяПодсказка" id="74"/>
+						</InputField>
+						<InputField name="ЖурналОтправокРезультат" id="75">
+							<DataPath>ЖурналОтправок.Результат</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЖурналОтправокРезультатКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="ЖурналОтправокРезультатРасширеннаяПодсказка" id="77"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЖурналОтправок" id="1">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Документ" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторЗапроса" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Статус" id="4">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаОтправки" id="5">
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="6">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>500</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Результат" id="7">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТестовыйРежим" id="8">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресСервиса" id="9">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьАвтоОтправку" id="10">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимПредставления" id="11">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ТестироватьМеханизм" id="1">
+			<Action>ТестироватьМеханизм</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьРегистрЭДО" id="2">
+			<Action>ОткрытьРегистрЭДО</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+		</Command>
+		<Command name="ОбновитьЖурнал" id="3">
+			<Action>ОбновитьЖурнал</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьПодключениеКоманда" id="4">
+			<Action>ПроверитьПодключение</Action>
+		</Command>
+		<Command name="ЗаписатьНастройкиКоманда" id="5">
+			<Action>ЗаписатьНастройки</Action>
+		</Command>
+		<Command name="ТестироватьЭТрНКоманда" id="6">
+			<Action>ТестироватьЭТрН</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
